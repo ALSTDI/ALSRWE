@@ -11,3 +11,8 @@ chapters:
   - id: new_to_rwe
     title: "New to RWE"
     file: new_to_rwe.qmd
+
+website:
+  type: "github-pages"
+  repo-url: "https://github.com/ALSTDI/ALSRWE"  # replace with your repository URL
+  branch: "gh-pages"
