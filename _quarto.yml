@@ -1,18 +1,15 @@
-# _quarto.yml
-
 title: "Welcome to ALS RWE"
 author: "Danielle Boyce and the ALS TDI RWE Team"
-format: html
+format: 
+  html: 
+    toc: true    # Optional: Add a table of contents if desired
+
 chapters:
-  - chapters:
-  - id: github_docker
-    title: "GitHub and Docker Overview"
-    file: github_docker.qmd
   - id: new_to_rwe
     title: "New to RWE"
     file: new_to_rwe.qmd
 
 website:
   type: "github-pages"
-  repo-url: "https://github.com/ALSTDI/ALSRWE"  # replace with your repository URL
+  repo-url: "https://github.com/ALSTDI/ALSRWE"  # Ensure this URL is correct
   branch: "gh-pages"
