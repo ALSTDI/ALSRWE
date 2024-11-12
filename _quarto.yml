@@ -1,0 +1,13 @@
+# _quarto.yml
+
+title: "Welcome to ALS RWE"
+author: "Danielle Boyce and the ALS TDI RWE Team"
+format: html
+chapters:
+  - chapters:
+  - id: github_docker
+    title: "GitHub and Docker Overview"
+    file: github_docker.qmd
+  - id: new_to_rwe
+    title: "New to RWE"
+    file: new_to_rwe.qmd
