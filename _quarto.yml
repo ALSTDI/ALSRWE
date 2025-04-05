@@ -3,27 +3,43 @@ project:
   output-dir: _book
 
 book:
-  title: "ALS-RWE: A Living Resource for ALS Real World Evidence"
-  author: "Danielle Boyce"
-  date: "today"
-  chapters:
-    - index.qmd
-    - approach.qmd
-    - trainings.qmd
-    - GIS.qmd
-    - ohdsi-omop.qmd
-    - resources.qmd
-    
-  sidebar:
-    style: "floating"
+  title: "ALS Real World Evidence (RWE)"
+  author: "Boyce Lab"
+  description: "An interactive book for learning about RWE in ALS and Beyond."
+  site-url: "https://alstdi.github.io/ALSRWE/"
+  repo-url: "https://github.com/ALSTDI/ALSRWE"
+  repo-branch: main
+  repo-actions: [edit, issue]
+  #favicon: images/favicon.ico  # Optional: Add your own favicon!
   search: true
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - index.qmd
+      - section: "Overview"
+        contents:
+          - approach.qmd
+          - trainings.qmd
+          - resources.qmd
+      - section: "Data"
+        contents:
+          - GIS.qmd
+          - OMOPDD.qmd
+      - section: "Appendix"
+        contents:
+          - search.qmd
+          - about.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - cosmo
+    css: styles.css  # Optional: Add a custom CSS!
     toc: true
     number-sections: true
-    code-fold: true
-    highlight-style: github
-    self-contained: true
+    code-copy: true
+    code-overflow: wrap
+
+editor: visual
