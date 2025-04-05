@@ -27,6 +27,7 @@ book:
         contents:
           - GIS.qmd
           - OMOPDD.qmd
+          - ehr.qmd
       - section: "Appendix"
         contents:
           - search.qmd
