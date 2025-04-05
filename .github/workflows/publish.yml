@@ -18,22 +18,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: false  # prevent token issues
+          persist-credentials: false
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          # Optionally pin a version if you want
-          version: "latest"
+          version: 1.4.550  # 👈 pin to specific working version!
 
-      - name: Install Pandoc (optional, if needed)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
+      - name: Check Quarto Version
+        run: quarto --version
 
       - name: Render book
         run: quarto render
-        continue-on-error: false  # fail fast if render fails
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
