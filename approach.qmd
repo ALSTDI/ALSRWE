@@ -1,11 +1,8 @@
 ---
 title: "Our Approach"
-format: html
 ---
 
-
 # Our approach
-
 
 ![STARDUSTT Framework Overview](Danielle_graphic_2.png)
 
@@ -19,19 +16,19 @@ Understanding OMOP goes beyond the schema of the OMOP CDM. To participate in OMO
 
 ## Table 1: Strategies for Resolving Common Problems in OMOP Implementation Projects
 
-| Problem                                           | Impact                                         | Strategy                                                     |
-|---------------------------------------------------|------------------------------------------------|--------------------------------------------------------------|
-| Team members have varying levels of expertise     | Leaders have trouble making decisions          | Level the playing field by starting with fundamental knowledge |
-| OHDSI educational resources are overwhelming      | Learners are overwhelmed                       | Provide curated, annotated resources targeted for specific needs |
-| Technical jargon is confusing                     | Miscommunication and misunderstandings         | Simplify communication by using accessible language          |
-| Jumping into complex topics too quickly           | Frustration and disengagement                  | Build knowledge incrementally                                |
-| Passive learning methods                          | Lower retention of information and skills      | Provide engaging, active learning exercises                  |
-| Lack of regular feedback                          | Persistent misunderstandings and slow progress | Regular check-ins and open lines of communication            |
-| One-size-fits-all teaching methods                | Inconsistent learning outcomes                 | Develop diverse teaching methods                             |
-| Incomplete or unclear documentation               | Difficulty in applying learned concepts        | Provide clear, accessible documentation                      |
-| Isolated learning limits knowledge sharing        | Slower problem-solving and innovation         | Encourage mentorship and peer-to-peer learning               |
-| Theoretical learning lacks practical application  | Difficulty applying knowledge to real tasks    | Focus on real-world applications through case studies        |
-| Static training programs                          | Training may not address current needs         | Continuously improve, adapt, and refine learning materials   |
+| Problem | Impact | Strategy |
+|-----------------------|----------------------|----------------------------|
+| Team members have varying levels of expertise | Leaders have trouble making decisions | Level the playing field by starting with fundamental knowledge |
+| OHDSI educational resources are overwhelming | Learners are overwhelmed | Provide curated, annotated resources targeted for specific needs |
+| Technical jargon is confusing | Miscommunication and misunderstandings | Simplify communication by using accessible language |
+| Jumping into complex topics too quickly | Frustration and disengagement | Build knowledge incrementally |
+| Passive learning methods | Lower retention of information and skills | Provide engaging, active learning exercises |
+| Lack of regular feedback | Persistent misunderstandings and slow progress | Regular check-ins and open lines of communication |
+| One-size-fits-all teaching methods | Inconsistent learning outcomes | Develop diverse teaching methods |
+| Incomplete or unclear documentation | Difficulty in applying learned concepts | Provide clear, accessible documentation |
+| Isolated learning limits knowledge sharing | Slower problem-solving and innovation | Encourage mentorship and peer-to-peer learning |
+| Theoretical learning lacks practical application | Difficulty applying knowledge to real tasks | Focus on real-world applications through case studies |
+| Static training programs | Training may not address current needs | Continuously improve, adapt, and refine learning materials |
 
 # The Curse of Knowledge and Impact on OMOP Projects
 
@@ -81,27 +78,24 @@ Translation & Communication bridges linguistic and cultural gaps in global healt
 
 In implementing the STARDUSTT framework, it is essential to consider the roles and responsibilities of various team members involved:
 
-- **C-Suite Executives**: Focused on strategic insights, high-level overviews, and the impacts of these projects. Training emphasizes non-technical language for informed decision-making.
-- **Physician/Nurse Clinical Informaticists**: Require solid understanding of EHR schemas, standardized terminologies, data security, and IRB concerns. Training emphasizes efficiency, simplified technical jargon, and project management.
-- **Data Engineers**: Need training in relational databases, GitHub, Docker, OMOP CDM, and various SQL dialects. Training provides both project context and technical depth, addressing an often-overlooked detail for effective data engineering.
+-   **C-Suite Executives**: Focused on strategic insights, high-level overviews, and the impacts of these projects. Training emphasizes non-technical language for informed decision-making.
+-   **Physician/Nurse Clinical Informaticists**: Require solid understanding of EHR schemas, standardized terminologies, data security, and IRB concerns. Training emphasizes efficiency, simplified technical jargon, and project management.
+-   **Data Engineers**: Need training in relational databases, GitHub, Docker, OMOP CDM, and various SQL dialects. Training provides both project context and technical depth, addressing an often-overlooked detail for effective data engineering.
 
 ## Table 2: Applying the STARDUSTT Framework to Various Personas
 
-| Component               | C-Suite Executives                                                                                       | Physician/Nurse Clinical Informaticists                                                            | Data Engineers                                                                                      |
-|-------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Secure Data             | Emphasizing data security, privacy, and compliance with regulations like HIPAA                           | Focusing on data de-identification and IRB compliance for PHI within OMOP CDM                      | Training on advanced data protection practices, including de-identification                         |
-| Technology Awareness    | Introducing Broadsea and OHDSI tools, outlining strategic value and ROI                                 | Knowledge of OHDSI tools like Broadsea, Data Quality Dashboard, Usagi, and their clinical use      | Comprehensive training on essential technologies like Broadsea and OHDSI tools                       |
-| Active Clinical Representation | Supporting interdisciplinary collaboration through protected effort                          | Bridging communication between clinical experts and technical team for understanding data provenance |                                                                                                     |
-| Relational Databases    | Explaining strategic importance for data management and decision-making                                 | Training on navigating and querying databases relevant to clinical data                            | Offering customized scripts for SQL dialect and OMOP CDM version                                    |
-| Data Quality            | Highlighting impact of high-quality data on strategic goals and operational efficiency                  | Emphasizing OHDSI tools for data cleaning, validation, and standardization                          | Detailed training on OHDSI data quality, Book of OHDSI, curated resources, and OHDSI community       |
-| Utilization of GitHub   | Demonstrating value of version control for efficient project management                                 | Simplifying version control systems for data and collaboration management                          | Workshops on advanced GitHub functionalities, repository management, open-source contributions       |
-| Standardized Vocabularies | Importance of vocabularies for data consistency and interoperability in strategic planning           | Training on vocabularies like SNOMED, LOINC, RxNorm for clinical data management                   | Training on vocabularies to ensure accurate data mapping and analysis within OHDSI                   |
-| Training & Documentation | Executive summaries, reinforcing learning and knowledge sharing                                       | Clinical data guides, glossaries, connections with senior informaticists                           | Technical tutorials, coding workshops, collaborative projects, detailed manuals, peer coding reviews |
+| Component | C-Suite Executives | Physician/Nurse Clinical Informaticists | Data Engineers |
+|---------------|--------------------|-------------------|-------------------|
+| Secure Data | Emphasizing data security, privacy, and compliance with regulations like HIPAA | Focusing on data de-identification and IRB compliance for PHI within OMOP CDM | Training on advanced data protection practices, including de-identification |
+| Technology Awareness | Introducing Broadsea and OHDSI tools, outlining strategic value and ROI | Knowledge of OHDSI tools like Broadsea, Data Quality Dashboard, Usagi, and their clinical use | Comprehensive training on essential technologies like Broadsea and OHDSI tools |
+| Active Clinical Representation | Supporting interdisciplinary collaboration through protected effort | Bridging communication between clinical experts and technical team for understanding data provenance |  |
+| Relational Databases | Explaining strategic importance for data management and decision-making | Training on navigating and querying databases relevant to clinical data | Offering customized scripts for SQL dialect and OMOP CDM version |
+| Data Quality | Highlighting impact of high-quality data on strategic goals and operational efficiency | Emphasizing OHDSI tools for data cleaning, validation, and standardization | Detailed training on OHDSI data quality, Book of OHDSI, curated resources, and OHDSI community |
+| Utilization of GitHub | Demonstrating value of version control for efficient project management | Simplifying version control systems for data and collaboration management | Workshops on advanced GitHub functionalities, repository management, open-source contributions |
+| Standardized Vocabularies | Importance of vocabularies for data consistency and interoperability in strategic planning | Training on vocabularies like SNOMED, LOINC, RxNorm for clinical data management | Training on vocabularies to ensure accurate data mapping and analysis within OHDSI |
+| Training & Documentation | Executive summaries, reinforcing learning and knowledge sharing | Clinical data guides, glossaries, connections with senior informaticists | Technical tutorials, coding workshops, collaborative projects, detailed manuals, peer coding reviews |
 | Translation & Communication | Emphasizing clear cross-functional and cross-cultural communication for alignment and cohesion | Training on effective cross-disciplinary communication, including strategies for engaging non-technical stakeholders | Ensuring clarity in technical documentation, promoting best practices for collaborative communication across technical and non-technical team members |
 
 # Conclusion
 
 Effective training for large-scale clinical informatics projects across multidisciplinary teams requires addressing diverse needs so each team member understands their role's strategic importance and technical aspects. By mitigating the Curse of Knowledge, we can provide clear, incremental, and practical training that accommodates different learning styles and levels of expertise. The STARDUSTT framework emphasizes leveling the playing field, simplifying technical jargon, and focusing on real-world applications. Regular feedback, mentorship, and continuously updated resources enable learners to apply their knowledge effectively in support of large-scale observational research projects.
-
-
-
