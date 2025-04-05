@@ -2,8 +2,6 @@
 title: "Our Approach"
 ---
 
-Our approach
-
 ![STARDUSTT Framework Overview](Danielle_graphic_2.png)
 
 With the increasing adoption of standardized data frameworks, many organizations are now transforming their electronic health records into common data models (CDM) such as the Observational Medical Outcomes Partnership (OMOP). The OMOP extract, transform, and load (ETL) process is complex and necessitates collaboration among diverse stakeholders (data engineers, clinical informaticists, clinicians, and health system leadership), each with different technical backgrounds and professional obligations. A common challenge is translating technical knowledge across these diverse groups, often hindered by the "curse of knowledge." Here, we describe the best practices for coordinating a large-scale international OMOP project, including a proposed theoretical framework for ensuring implementation readiness of participating sites. The STARDUSTT framework (Secure Data, Technology Awareness, Relational Databases, Data Quality, Utilization of GitHub, Standardized Vocabularies, Training & Documentation, Translation and Communication) represents a structured approach to support CDM implementation projects that can be applied in a variety of settings.
@@ -85,7 +83,7 @@ In implementing the STARDUSTT framework, it is essential to consider the roles a
 Table 2: Applying the STARDUSTT Framework to Various Personas
 
 | Component | C-Suite Executives | Physician/Nurse Clinical Informaticists | Data Engineers |
-|---------------|--------------------|-------------------|-------------------|
+|-----------------|-------------------|------------------|------------------|
 | Secure Data | Emphasizing data security, privacy, and compliance with regulations like HIPAA | Focusing on data de-identification and IRB compliance for PHI within OMOP CDM | Training on advanced data protection practices, including de-identification |
 | Technology Awareness | Introducing Broadsea and OHDSI tools, outlining strategic value and ROI | Knowledge of OHDSI tools like Broadsea, Data Quality Dashboard, Usagi, and their clinical use | Comprehensive training on essential technologies like Broadsea and OHDSI tools |
 | Active Clinical Representation | Supporting interdisciplinary collaboration through protected effort | Bridging communication between clinical experts and technical team for understanding data provenance |  |
