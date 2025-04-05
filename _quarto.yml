@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "ALS-RWE: A Living Resource for ALS Real World Evidence"
+  author: "Danielle Boyce"
+  date: "today"
+  chapters:
+    - index.qmd
+    - approach.qmd
+    - trainings.qmd
+    - GIS.qmd
+    - ohdsi-omop.qmd
+    - resources.qmd
+    
+  sidebar:
+    style: "floating"
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    number-sections: true
+    code-fold: true
+    highlight-style: github
+    self-contained: true
