@@ -3,7 +3,6 @@ title: "Welcome"
 format: html
 ---
 
-
 # Welcome to ALS RWE
 
 This is the introduction to your Quarto book.
