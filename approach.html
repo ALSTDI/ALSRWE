@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.47">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Our Approach</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="approach_files/libs/clipboard/clipboard.min.js"></script>
+<script src="approach_files/libs/quarto-html/quarto.js"></script>
+<script src="approach_files/libs/quarto-html/popper.min.js"></script>
+<script src="approach_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="approach_files/libs/quarto-html/anchor.min.js"></script>
+<link href="approach_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="approach_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="approach_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="approach_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="approach_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+  
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Our Approach</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Danielle_graphic_2.png" class="img-fluid figure-img"></p>
+<figcaption>STARDUSTT Framework Overview</figcaption>
+</figure>
+</div>
+<p>With the increasing adoption of standardized data frameworks, many organizations are now transforming their electronic health records into common data models (CDM) such as the Observational Medical Outcomes Partnership (OMOP). The OMOP extract, transform, and load (ETL) process is complex and necessitates collaboration among diverse stakeholders (data engineers, clinical informaticists, clinicians, and health system leadership), each with different technical backgrounds and professional obligations. A common challenge is translating technical knowledge across these diverse groups, often hindered by the “curse of knowledge.” Here, we describe the best practices for coordinating a large-scale international OMOP project, including a proposed theoretical framework for ensuring implementation readiness of participating sites. The STARDUSTT framework (Secure Data, Technology Awareness, Relational Databases, Data Quality, Utilization of GitHub, Standardized Vocabularies, Training &amp; Documentation, Translation and Communication) represents a structured approach to support CDM implementation projects that can be applied in a variety of settings.</p>
+<p>Background</p>
+<p>The popularity of the Observational Medical Outcomes Partnership Common Data Model (OMOP CDM) like the National COVID Cohort Collaborative (N3C), the All of Us Research Program, and The European Health Data &amp; Evidence Network (EHDEN) has raised the profile of large scale observational research initiatives. One such project is CURE ID (Heavner et al., 2023), which required training and support for numerous sites across the United States, Asia, and South America. Throughout this project and other work, we have identified a foundational knowledge gap between key stakeholder groups.</p>
+<p>Understanding OMOP goes beyond the schema of the OMOP CDM. To participate in OMOP projects, a team must understand other biomedical informatics and data science concepts, including the basics of observational research, standardized terminologies, various coding languages (e.g., SQL, R), and tools like GitHub and Docker containers. Unfortunately, many clinical data and informatics leaders were trained several decades ago, before the advent of real-world data, electronic health records, the emphasis on open-source software programs like Python and R, and the use of tools like code editors and Integrated Development Environments (IDEs). Many have never used relational databases or data definition language scripts (DDL) and are unfamiliar with the tools and programs necessary to query electronic health records. These skills are essential for accessing and deploying open-source Observational Health Data Science and Informatics (OHDSI) software and participating in other activities required to advocate for and implement OMOP projects.</p>
+<p>Table 1: Strategies for Resolving Common Problems in OMOP Implementation Projects</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 30%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Impact</th>
+<th>Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Team members have varying levels of expertise</td>
+<td>Leaders have trouble making decisions</td>
+<td>Level the playing field by starting with fundamental knowledge</td>
+</tr>
+<tr class="even">
+<td>OHDSI educational resources are overwhelming</td>
+<td>Learners are overwhelmed</td>
+<td>Provide curated, annotated resources targeted for specific needs</td>
+</tr>
+<tr class="odd">
+<td>Technical jargon is confusing</td>
+<td>Miscommunication and misunderstandings</td>
+<td>Simplify communication by using accessible language</td>
+</tr>
+<tr class="even">
+<td>Jumping into complex topics too quickly</td>
+<td>Frustration and disengagement</td>
+<td>Build knowledge incrementally</td>
+</tr>
+<tr class="odd">
+<td>Passive learning methods</td>
+<td>Lower retention of information and skills</td>
+<td>Provide engaging, active learning exercises</td>
+</tr>
+<tr class="even">
+<td>Lack of regular feedback</td>
+<td>Persistent misunderstandings and slow progress</td>
+<td>Regular check-ins and open lines of communication</td>
+</tr>
+<tr class="odd">
+<td>One-size-fits-all teaching methods</td>
+<td>Inconsistent learning outcomes</td>
+<td>Develop diverse teaching methods</td>
+</tr>
+<tr class="even">
+<td>Incomplete or unclear documentation</td>
+<td>Difficulty in applying learned concepts</td>
+<td>Provide clear, accessible documentation</td>
+</tr>
+<tr class="odd">
+<td>Isolated learning limits knowledge sharing</td>
+<td>Slower problem-solving and innovation</td>
+<td>Encourage mentorship and peer-to-peer learning</td>
+</tr>
+<tr class="even">
+<td>Theoretical learning lacks practical application</td>
+<td>Difficulty applying knowledge to real tasks</td>
+<td>Focus on real-world applications through case studies</td>
+</tr>
+<tr class="odd">
+<td>Static training programs</td>
+<td>Training may not address current needs</td>
+<td>Continuously improve, adapt, and refine learning materials</td>
+</tr>
+</tbody>
+</table>
+<p>The Curse of Knowledge and Impact on OMOP Projects</p>
+<p>The Curse of Knowledge is a concept first described by economists Colin Camerer, George Loewenstein, and Martin Weber in 1989. It is a cognitive bias that occurs when an individual possessing particular knowledge finds it challenging to understand what it is like for someone else to lack that knowledge. This often results in overestimating how much others know. Understanding and mitigating the Curse of Knowledge is essential for effective teaching, communication, and product development. It requires simplifying explanations, checking for understanding, and considering the perspective of the less knowledgeable audience.</p>
+<p>This concept applies to the OMOP CDM, where OHDSI and OMOP leaders and developers use modern open-source tools but typically do not offer training on the prerequisites necessary to fully participate in OHDSI processes and tools. As part of our CURE ID training approach, to overcome the Curse of Knowledge, we developed the STARDUST framework.</p>
+<p>STARDUSTT Framework</p>
+<p>Secure Data</p>
+<p>Secure Data technical support and training emphasize the importance of data protection practices, including de-identification techniques and robust data security measures to protect personal health information (PHI) within the OMOP CDM.</p>
+<p>Technology Awareness</p>
+<p>Technology Awareness covers essential tools and technologies like Docker Containers, SQL, and other coding practices that are crucial for data management and analysis. This component provides team members with the technical skills needed to navigate and utilize OHDSI tools effectively.</p>
+<p>Active Clinical Representation</p>
+<p>Active clinical representation ensures nuanced understanding of clinical workflows and documentation practices. Interdisciplinary teams of physicians, nurses, and other clinicians should be part of the core functional team working closely with technical experts and data scientists.</p>
+<p>Relational Databases</p>
+<p>Relational Databases training focuses on the structure, management, and querying of databases. Technical support includes foundational courses on relational database concepts, SQL querying, and schema design.</p>
+<p>Data Quality</p>
+<p>Data Quality addresses the importance of maintaining high data accuracy, consistency, and reliability. This component emphasizes the foundation of data quality in electronic health records for secondary use.</p>
+<p>Utilization of GitHub</p>
+<p>Utilization of GitHub introduces version control systems, enhancing collaboration and efficient project management. Training covers basics of version control, repository management, and reporting issues. By learning to use GitHub effectively, team members can collaborate on projects more efficiently and maintain better control over project versions and changes.</p>
+<p>Standardized Vocabularies</p>
+<p>Standardized vocabularies cover the use and application of standardized terminologies and classifications to ensure data consistency and interoperability. This includes training on vocabularies such as SNOMED, LOINC, and RxNorm, for projects involving the OMOP CDM, as well as exposure to the OHDSI Athena tool.</p>
+<p>Training &amp; Documentation</p>
+<p>Training &amp; Documentation provides all team members access to clear, accessible resources and diverse learning methods to cater to different learning styles. This component includes providing comprehensive documentation, training materials, and continuous updates based on emerging technologies. Emphasizing rigorous research techniques, such as protocols, Manuals of Procedures (MOPs), and Standard Operating Procedures (SOPs), promotes standardization and reproducibility, just like in any well-conducted study.</p>
+<p>Translation &amp; Communication</p>
+<p>Translation &amp; Communication bridges linguistic and cultural gaps in global health data projects. This involves translating training materials, documentation, and resources, and building cross-cultural competencies within teams. Effective communication ensures accurate conveyance of clinical, technical, and operational practices, fostering cohesive, multilingual, and multicultural team dynamics.</p>
+<p>Understanding Personas</p>
+<p>In implementing the STARDUSTT framework, it is essential to consider the roles and responsibilities of various team members involved:</p>
+<ul>
+<li><strong>C-Suite Executives</strong>: Focused on strategic insights, high-level overviews, and the impacts of these projects. Training emphasizes non-technical language for informed decision-making.</li>
+<li><strong>Physician/Nurse Clinical Informaticists</strong>: Require solid understanding of EHR schemas, standardized terminologies, data security, and IRB concerns. Training emphasizes efficiency, simplified technical jargon, and project management.</li>
+<li><strong>Data Engineers</strong>: Need training in relational databases, GitHub, Docker, OMOP CDM, and various SQL dialects. Training provides both project context and technical depth, addressing an often-overlooked detail for effective data engineering.</li>
+</ul>
+<p>Table 2: Applying the STARDUSTT Framework to Various Personas</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>C-Suite Executives</th>
+<th>Physician/Nurse Clinical Informaticists</th>
+<th>Data Engineers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Secure Data</td>
+<td>Emphasizing data security, privacy, and compliance with regulations like HIPAA</td>
+<td>Focusing on data de-identification and IRB compliance for PHI within OMOP CDM</td>
+<td>Training on advanced data protection practices, including de-identification</td>
+</tr>
+<tr class="even">
+<td>Technology Awareness</td>
+<td>Introducing Broadsea and OHDSI tools, outlining strategic value and ROI</td>
+<td>Knowledge of OHDSI tools like Broadsea, Data Quality Dashboard, Usagi, and their clinical use</td>
+<td>Comprehensive training on essential technologies like Broadsea and OHDSI tools</td>
+</tr>
+<tr class="odd">
+<td>Active Clinical Representation</td>
+<td>Supporting interdisciplinary collaboration through protected effort</td>
+<td>Bridging communication between clinical experts and technical team for understanding data provenance</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Relational Databases</td>
+<td>Explaining strategic importance for data management and decision-making</td>
+<td>Training on navigating and querying databases relevant to clinical data</td>
+<td>Offering customized scripts for SQL dialect and OMOP CDM version</td>
+</tr>
+<tr class="odd">
+<td>Data Quality</td>
+<td>Highlighting impact of high-quality data on strategic goals and operational efficiency</td>
+<td>Emphasizing OHDSI tools for data cleaning, validation, and standardization</td>
+<td>Detailed training on OHDSI data quality, Book of OHDSI, curated resources, and OHDSI community</td>
+</tr>
+<tr class="even">
+<td>Utilization of GitHub</td>
+<td>Demonstrating value of version control for efficient project management</td>
+<td>Simplifying version control systems for data and collaboration management</td>
+<td>Workshops on advanced GitHub functionalities, repository management, open-source contributions</td>
+</tr>
+<tr class="odd">
+<td>Standardized Vocabularies</td>
+<td>Importance of vocabularies for data consistency and interoperability in strategic planning</td>
+<td>Training on vocabularies like SNOMED, LOINC, RxNorm for clinical data management</td>
+<td>Training on vocabularies to ensure accurate data mapping and analysis within OHDSI</td>
+</tr>
+<tr class="even">
+<td>Training &amp; Documentation</td>
+<td>Executive summaries, reinforcing learning and knowledge sharing</td>
+<td>Clinical data guides, glossaries, connections with senior informaticists</td>
+<td>Technical tutorials, coding workshops, collaborative projects, detailed manuals, peer coding reviews</td>
+</tr>
+<tr class="odd">
+<td>Translation &amp; Communication</td>
+<td>Emphasizing clear cross-functional and cross-cultural communication for alignment and cohesion</td>
+<td>Training on effective cross-disciplinary communication, including strategies for engaging non-technical stakeholders</td>
+<td>Ensuring clarity in technical documentation, promoting best practices for collaborative communication across technical and non-technical team members</td>
+</tr>
+</tbody>
+</table>
+<p>Conclusion</p>
+<p>Effective training for large-scale clinical informatics projects across multidisciplinary teams requires addressing diverse needs so each team member understands their role’s strategic importance and technical aspects. By mitigating the Curse of Knowledge, we can provide clear, incremental, and practical training that accommodates different learning styles and levels of expertise. The STARDUSTT framework emphasizes leveling the playing field, simplifying technical jargon, and focusing on real-world applications. Regular feedback, mentorship, and continuously updated resources enable learners to apply their knowledge effectively in support of large-scale observational research projects.</p>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
