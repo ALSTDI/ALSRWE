@@ -27,8 +27,7 @@ book:
         contents:
           - GIS.qmd
           - ehr.qmd
-      
-
+     
 format:
   html:
     theme:
