@@ -1,5 +1,6 @@
 ---
 title: "Our Approach"
+numbered: false
 ---
 
 ![STARDUSTT Framework Overview](Danielle_graphic_2.png)
